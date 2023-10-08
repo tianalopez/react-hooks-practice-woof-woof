@@ -7,7 +7,7 @@ function Dogcontainer({dog}) {
     if (goodStatus !== dog.isGoodDog) {
       setGoodStatus((status) => dog.isGoodDog)
     }
-  }, [dog.isGoodDog])
+  }, [dog])
   //click function
   const handleClick = () => {
     const newGoodStatus = !goodStatus
